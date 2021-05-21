@@ -6,7 +6,6 @@ import Login from "./Components/Login";
 import Dashboard from "./Components/Dashboard";
 import Home from "./Components/Home";
 import Cart from "./Components/Cart";
-import Error from "./Components/Error";
 import {auth} from "./firebase";
 
 
@@ -28,8 +27,6 @@ useEffect(() => {
         <Route exact path='/dashboard' user={user} component={Dashboard} />
         <Route exact path="/home" user={user} component={Home} />
         <Route exact path="/cart" user={user} component={Cart} />
-
-        <Route component={Error} />
       </Switch>
   
 
